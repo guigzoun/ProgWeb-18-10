@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Registration</title>
+
+      <link rel="stylesheet" type="text/css" href="/css/stylelogin.css" />
+
+
+
+
+  </head>
+  <body>
+
+
+
+  <br>
+  <br>
+  <!-- Create HTML registration form -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+
+            <!-- success message -->
+            <div th:if="${param.success}">
+                <div class="alert alert-info">You've successfully registered
+                    to our awesome app!</div>
+            </div>
+
+           
+            <div class="registration-box">
+                 <h1>Registration</h1>
+                <form th:action="@{/registration}" method="post" th:object="${user}">
+                    <div class="form-group">
+                        
+                        
+                        <p class="FirstName"> <script type="text/javascript">var isCleared = false;</script>
+                   
+                        <input id="firstName" class="form-control" th:field="*{firstName}"
+                                    
+                                    value="First name" type="text" name="First name" onfocus="if(this.value=='First name'){this.value=''}" onblur="if(this.value==''){this.value='First name'}" />
+                    </div>
+
+
+
+
+
+                    <div class="form-group">
+     
+                        <input
+                            id="lastName" class="form-control" th:field="*{lastName}"
+                        value="Last name" type="text" name="Last name" onfocus="if(this.value=='Last name'){this.value=''}" onblur="if(this.value==''){this.value='Last name'}"
+                     />
+                    
+                    </div>
+
+                    <div class="form-group">
+                       <input
+                            id="email" class="form-control" th:field="*{email}" 
+                            value="Email" type="text" name="Email" onfocus="if(this.value=='Email'){this.value=''}" onblur="if(this.value==''){this.value='Email'}"
+
+                            />
+                    </div>
+
+                    <div class="form-group">
+                        <input
+                            id="password" class="form-control"
+                            th:field="*{password}" 
+                            value="Password" type="text" name="Password" onfocus="if(this.value=='Password'){this.value=''}" onblur="if(this.value==''){this.value='Password'}"
+
+                             />
+                    </div>
+
+
+
+                    <div class="form-group">
+                       
+                        
+                           
+                           <a href="#">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <button  type="submit" class="btn btn-success">Register</button>
+                            </a>
+                    </div>
+                 <div class="form-group">
+                        <span>Already registered?   
+
+                            <a href="/" th:href="@{/login}">Login
+    								here</a></span>
+                   
+
+                    </div>
+
+
+
+
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
