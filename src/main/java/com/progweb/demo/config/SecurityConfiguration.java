@@ -18,6 +18,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
+
     @Autowired
     private UserService userService;
 
@@ -40,7 +41,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception{
-        http.authorizeRequests().antMatchers(
+        http.authorizeRequests()
+                .antMatchers(
                 "/registration**","/js/**","/css/**","/img/**")
                 .permitAll()
                 .anyRequest()
