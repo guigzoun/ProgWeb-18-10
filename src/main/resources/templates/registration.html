@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org/" >
 <head>
     <meta charset="ISO-8859-1">
     <title>Registration</title>
 
-      <link rel="stylesheet" type="text/css" href="/css/stylelogin.css" />
-    <script language="javascript">
-
-        </script>
+      <link rel="stylesheet" type="text/css" href="/css/registration.css" />
 
 
-
+    <script language="javascript"></script>
   </head>
-  <body>
+
+
+
+<body>
 
 
 
@@ -25,9 +25,7 @@
 
 
             <!-- success message -->
-
-
-            <div th:if="${param.success}" class=""success">
+            <div th:if="${param.success}" class="success">
                 <div class="alert alert-info">You've successfully registered
                     to our awesome app!</div>
             </div>
@@ -81,6 +79,7 @@
                                         <button  type="submit" class="btn btn-success">Register</button>
                                         <span></span><span></span><span></span><span></span>
                                     </li>
+                                </ul>
                             </nav>
                         </div>
 
@@ -96,6 +95,7 @@
                                     </a>
                                     <span></span><span></span><span></span><span></span>
                                 </li>
+                            </ul>
                         </nav>
                     </div>
 
