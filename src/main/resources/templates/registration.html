@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org/" >
 <head>
     <meta charset="ISO-8859-1">
     <title>Registration</title>
 
-      <link rel="stylesheet" type="text/css" href="/css/stylelogin.css" />
-    <script language="javascript">
-
-        </script>
+      <link rel="stylesheet" type="text/css" href="/css/registration.css" />
 
 
-
+    <script language="javascript"></script>
   </head>
-  <body>
+
+
+
+<body>
 
 
 
@@ -26,49 +26,37 @@
 
             <!-- success message -->
 
-
-            <div th:if="${param.success}" class=""success">
+            <div th:if="${param.success}" class="success">
+                <div class="information-box">
                 <div class="alert alert-info">You've successfully registered
                     to our awesome app!</div>
+                </div>
             </div>
+
 
            
             <div class="registration-box">
                  <h1>Registration</h1>
                 <form th:action="@{/registration}" method="post" th:object="${user}">
                     <div class="form-group">
-                        
-                        
-                        <p class="FirstName"> <script type="text/javascript">var isCleared = false;</script>
-                   
-                        <input id="firstName" class="form-control" th:field="*{firstName}"
-                               placeholder="FIRST NAME"   />
-                    </div>
+                        <p class="FirstName"> <script type="text/javascript">var isCleared = false;</script></p>
+                        <input id="firstName" class="form-control" th:field="*{firstName}" placeholder="FIRST NAME"/>
+         </div>
 
 
 
 
 
                     <div class="form-group">
-     
-                        <input
-                            id="lastName" class="form-control" th:field="*{lastName}"  placeholder="LAST NAME"
-                        />
-                    
+                        <input id="lastName" class="form-control" th:field="*{lastName}"  placeholder="LAST NAME"/>
                     </div>
 
                     <div class="form-group">
-                       <input
-                            id="email" class="form-control" th:field="*{email}"  placeholder="EMAIL"
-
-                            />
+                       <input id="email" class="form-control" th:field="*{email}"  placeholder="EMAIL"/>
                     </div>
 
                     <div class="form-group">
-                        <input
-                            id="password" class="form-control"
-                            th:field="*{password}"
-                            type="password" placeholder="PASSWORD" />
+                        <input id="password" class="form-control" th:field="*{password}" type="password" placeholder="PASSWORD" />
                     </div>
 
 
@@ -81,8 +69,9 @@
                                         <button  type="submit" class="btn btn-success">Register</button>
                                         <span></span><span></span><span></span><span></span>
                                     </li>
+                                </ul>
                             </nav>
-                        </div>
+                    </div>
 
 
 
@@ -96,6 +85,7 @@
                                     </a>
                                     <span></span><span></span><span></span><span></span>
                                 </li>
+                            </ul>
                         </nav>
                     </div>
 
