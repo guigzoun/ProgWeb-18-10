@@ -1,0 +1,149 @@
+
+
+
+body{
+
+	background-image: url("/img/tsubasa.jpg");
+	color: white;
+    background-size: cover;
+}
+h1{
+
+text-transform: uppercase;
+       font-weight: bold;
+       font-family: sans-serif;
+       letter-spacing: 0.1em;
+       text-align: center;
+
+}
+
+.login-box {
+    position: relative;
+    top: 100%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, 0%);
+    background: rgba(0,0,0,.10);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+
+
+  .information-box {
+    position: relative;
+    top: 100%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, 0%);
+    background: rgb(255, 0, 0,0.6);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(138, 11, 11, 0.6);
+    border-radius: 10px;
+  }
+
+.alert{
+
+         color: #fff;
+         font-weight: bold;
+         font-family: sans-serif;
+         letter-spacing: 0.1em;
+         text-align: center;
+
+
+}
+.login-box .form-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #15223;
+         font-weight: bold;
+         font-family: sans-serif;
+         letter-spacing: 0.1em;
+         text-align: center;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+
+
+
+.btn {
+  background: transparent;
+  border:none;
+  color: #fff;
+  text-transform: uppercase;
+      font-weight: bold;
+      font-family: sans-serif;
+      letter-spacing: 0.1em;
+      text-align: center;
+}
+
+
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    --c: white;
+    color: var(--c);
+    font-size: 7px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+nav ul li button:hover {
+    color: black;
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+
