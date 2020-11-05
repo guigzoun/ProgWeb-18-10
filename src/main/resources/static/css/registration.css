@@ -27,8 +27,30 @@ text-transform: uppercase;
   border-radius: 10px;
 }
 
+.information-box {
+    position: relative;
+    top: 100%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, 0%);
+    background: rgba(38, 177, 73, 0.363);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(17, 148, 56, 0.6);
+    border-radius: 10px;
+  }
 
+.alert{
 
+    color: #fff; /* couleur de remplissage du texte */
+             font-weight: bold;
+             font-family: sans-serif;
+             letter-spacing: 0.1em;
+             text-align: center;
+    
+    
+    }
+    
 .registration-box .form-group input {
   width: 100%;
   padding: 10px 0;
