@@ -3,21 +3,21 @@ package com.progweb.demo.model;
 import javax.persistence.*;
 import java.util.Collection;
 
-@Entity
-@Table(name="user", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
+@Entity //become a JP entity???
+@Table(name="user", uniqueConstraints = @UniqueConstraint(columnNames = "email")) // name the table
 public class User {
 
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @Id //id become a primary key
+    @GeneratedValue(strategy= GenerationType.IDENTITY) //strategie de la cle primaire
     private Long id;
 
-    @Column(name ="first_name")
+    @Column(name ="first_name") // noms des colonnes
     private String firstName;
 
     @Column(name="last_name")
     private String lastName;
 
-
+//without definir @column le nom de la colonne est automatiquement le  nom de la classe
     private String email;
     private String password;
 

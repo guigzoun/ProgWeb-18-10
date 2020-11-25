@@ -1,4 +1,5 @@
 package com.progweb.demo.web.dto;
+//DTO objet est un objet qui recupere les information . Pour transporter les dataa enter servers et client
 
 public class UserRegistrationDto {
     private String firstName;
