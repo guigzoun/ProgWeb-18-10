@@ -1,0 +1,21 @@
+table{
+  caption-side: top;
+}
+th, td{
+  border: 1px solid black;
+  padding: 10px;
+
+}
+caption{
+  background-color: #0AD;
+  font-weight: bold;
+}
+
+.sondage{
+    float:right;
+
+}
+
+.creation{
+float:left;
+}

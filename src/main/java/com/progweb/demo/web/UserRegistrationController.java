@@ -1,13 +1,17 @@
 package com.progweb.demo.web;
 
+import com.progweb.demo.data.MessageDAO;
+import com.progweb.demo.model.Message;
 import com.progweb.demo.service.UserService;
 import com.progweb.demo.web.dto.UserRegistrationDto;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
 
 @Controller
 @RequestMapping("/registration")
@@ -33,8 +37,10 @@ public class UserRegistrationController {
     @PostMapping
     public String registerUserAccount(@ModelAttribute("user") UserRegistrationDto registrationDto){
         userService.save(registrationDto);
-        return "redirect:/registration?success";
+        return "redirect:/registration?success"; //retourne un succès
 
     }
 
 }
+
+
