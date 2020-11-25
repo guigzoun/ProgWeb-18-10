@@ -4,6 +4,7 @@ xmlns:sec="http://www.thymeLeaf.org/thymeLeaf-extras-springsecurity3">
 <head>
     <meta charset="UTF-8">
     <title>Registration and Login</title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
 
 <link rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -35,8 +36,15 @@ xmlns:sec="http://www.thymeLeaf.org/thymeLeaf-extras-springsecurity3">
 <br>
 <br>
 <div class="container">
-    <h1>Register and Login for Fiveapp</h1>
-    Welcome <span sec:authentification="principal.username">User</span>
+    <h1>Welcome to Fiveapp</h1>
+    <h2>Here are your informations !</h2>
+
+    <span sec:authentication="principal.username"></span>
+
+
+
+
+
 
 
 
