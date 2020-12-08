@@ -21,7 +21,7 @@
                     class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#" th:href="@{/}">Registration and Login Module</a>
-            <a class="navbar-brand" href="#" th:href="@{/msg}">test</a>
+            <a class="navbar-brand" href="#" th:href="@{/msg}">Sondage</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -48,17 +48,17 @@
 <div class="creation">
 
     <form action="#" th:action="@{/msg}" th:object="${newMessage}" method="POST">
-        <p>Autor</p>
+        <p>Créateur</p>
 
         <input type="text" th:field="*{autor}">
 
-        <p>message</p>
+        <p>Lieu</p>
 
         <input type="text" th:field="*{messages}">
 
-      <p>date</p>
+      <p>Date</p>
 
-        <input type="text" th:field="*{date}">
+        <input type="date" th:field="*{date}">
 
        <!--Bouton-->
         <input type="submit" value="Save">
@@ -78,6 +78,7 @@
                 </tr>
             </thead>
             <tbody>
+
                 <tr th:each="msg : ${msglist}">
                     <td><p th:text="${msg.autor}"></p></td>
                     <td><p th:text="${msg.messages}"></p></td>

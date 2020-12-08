@@ -13,9 +13,10 @@ caption{
 
 .sondage{
     float:right;
-
+    padding-right: 150px;
 }
 
 .creation{
 float:left;
+padding-left: 150px;
 }
