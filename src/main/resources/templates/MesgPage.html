@@ -50,15 +50,15 @@
     <form action="#" th:action="@{/msg}" th:object="${newMessage}" method="POST">
         <p>Organisateur</p>
 
-        <input type="text" th:field="*{autor}">
+        <input type="text" th:field="*{autor}" required>
 
         <p>Lieu</p>
 
-        <input type="text" th:field="*{messages}">
+        <input type="text" th:field="*{messages}" required>
 
          <p>Date</p>
 
-        <input type="date" th:field="*{date}">
+        <input type="date" th:field="*{date}" required>
 
        <!--Bouton-->
         <input type="submit" value="Save">
