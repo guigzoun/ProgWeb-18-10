@@ -21,7 +21,7 @@
                     class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#" th:href="@{/}">Registration and Login Module</a>
-            <a class="navbar-brand" href="#" th:href="@{/msg}">Sondage</a>
+            <a class="navbar-brand" href="#" th:href="@{/msg}">Match</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -48,7 +48,7 @@
 <div class="creation">
 
     <form action="#" th:action="@{/msg}" th:object="${newMessage}" method="POST">
-        <p>Créateur</p>
+        <p>Organisateur</p>
 
         <input type="text" th:field="*{autor}">
 
@@ -56,7 +56,7 @@
 
         <input type="text" th:field="*{messages}">
 
-      <p>Date</p>
+         <p>Date</p>
 
         <input type="date" th:field="*{date}">
 
@@ -72,7 +72,7 @@
             <thead>
             <caption>Sondage(s) crée(s)</caption>
                 <tr>
-                    <td>Créateur</td>
+                    <td>Organisateur</td>
                     <td>Lieu</td>
                     <td>Date</td>
                 </tr>
